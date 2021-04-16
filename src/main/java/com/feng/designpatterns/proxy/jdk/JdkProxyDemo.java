@@ -1,8 +1,5 @@
 package com.feng.designpatterns.proxy.jdk;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 /**
  * @Author Murphy
  * @Version 1.0

@@ -45,6 +45,7 @@ public class ServiceProxyInvocationHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         logBefor(method);
+        //核心：本质利用反射实现！
         Object result = method.invoke(target, args);
         logAfter(method);
         return result;
