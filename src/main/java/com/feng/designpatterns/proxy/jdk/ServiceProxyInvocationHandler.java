@@ -44,14 +44,14 @@ public class ServiceProxyInvocationHandler implements InvocationHandler {
      */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        logBefor(method);
+        logBefore(method);
         //核心：本质利用反射实现！
         Object result = method.invoke(target, args);
         logAfter(method);
         return result;
     }
 
-    private void logBefor(Method method){
+    private void logBefore(Method method){
         System.out.println(method.getName() + "() 开始执行!");
     }
 
