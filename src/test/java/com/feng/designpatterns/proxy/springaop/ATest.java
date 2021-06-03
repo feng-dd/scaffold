@@ -1,12 +1,7 @@
 package com.feng.designpatterns.proxy.springaop;
 
-import com.feng.scaffold.GenerateProjectScaffoldApplication;
-import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import javax.annotation.Resource;
 
 /**
  * @Author Murphy
@@ -15,16 +10,12 @@ import javax.annotation.Resource;
  * @Desc
  * @Since 1.0
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = {GenerateProjectScaffoldApplication.class})
+@SpringBootTest
 public class ATest {
 
-    @Resource
-    private IUserService userService;
-
     @Test
-    public void testAop() {
-        userService.add();
+    public void aop() {
+        System.out.println(1);
     }
 
 }
